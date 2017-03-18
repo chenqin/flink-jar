@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>fs.default.name</name>
+        <value>s3://dir</value>
+    </property>
+    <property>
+        <name>fs.s3a.access.key</name>
+        <value>keyhere</value>
+    </property>
+    <property>
+        <name>fs.s3a.secret.key</name>
+        <value>secrethere</value>
+    </property>
+    <property>
+        <name>fs.s3a.connection.maximum</name>
+        <value>15</value>
+        <description>Controls the maximum number of simultaneous connections to S3.</description>
+    </property>
+    <property>
+        <name>fs.s3.impl</name>
+        <value>org.apache.hadoop.fs.s3a.S3AFileSystem</value>
+        <description>The implementation class of the S3A Filesystem</description>
+    </property>
+    <property>
+        <name>fs.s3.buffer.dir</name>
+        <value>/tmp</value>
+    </property>
+    <property>
+        <name>fs.s3a.connection.ssl.enabled</name>
+        <value>true</value>
+        <description>Enables or disables SSL connections to S3.</description>
+    </property>
+</configuration>

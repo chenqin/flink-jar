@@ -1,0 +1,21 @@
+taskmanager.rpc.port: 6123
+taskmanager.data.port: 4964
+taskmanager.heap.mb: 39000
+taskmanager.numberOfTaskSlots: 1
+taskmanager.network.numberOfBuffers: 16368
+taskmanager.memory.preallocate: false
+parallelization.degree.default: 4
+taskmanager.tmp.dirs: /tmp/flink-jar/
+
+high-availability: zookeeper
+high-availability.zookeeper.quorum: <zks>
+high-availability.zookeeper.path.root: <zkpath>
+high-availability.zookeeper.storageDir: s3://<dir>
+high-availability.jobmanager.port: 8082
+high-availability.zookeeper.path.namespace: <namespace>
+
+fs.hdfs.hadoopconf: config/hadoop/
+
+state.backend: filesystem
+state.checkpoints.dir: s3://<dir>
+state.backend.fs.checkpointdir: s3://<dir>
